@@ -12,8 +12,8 @@ import R_and_D from "./Components/R_and_D";
 function App() {
   return (
     <>
-      <Router>
-        <Routes basename={"/agro-care"}>
+      <Router basename={"/agro-care"}>
+        <Routes>
           <Route path={`/`} element={<Home />} />
 
           <Route exact path={"/about"} element={<About />} />
