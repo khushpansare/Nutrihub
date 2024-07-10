@@ -14,7 +14,7 @@ function App() {
     <>
       <Router basename={"/agro-care"}>
         <Routes>
-          <Route path={`/`} element={<Home />} />
+          <Route path={`/*`} element={<Home />} />
 
           <Route exact path={"/about"} element={<About />} />
           <Route exact path="/contact" element={<Contact />} />

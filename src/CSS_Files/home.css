@@ -1,0 +1,30 @@
+.home-content {
+  .sec-1 {
+    background-image: url(../Assets/home/home-img-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .sec-2 {
+    text-align: center;
+
+    .nutrient-content {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+
+      .single-nutrient {
+        cursor: pointer;
+        img {
+          width: 50px;
+        }
+
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
