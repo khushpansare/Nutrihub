@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/agro-care/static/css/main.70e5efd5.css",
-    "main.js": "/agro-care/static/js/main.183277eb.js",
+    "main.css": "/agro-care/static/css/main.a830c154.css",
+    "main.js": "/agro-care/static/js/main.2d760439.js",
     "static/js/453.f11d96cd.chunk.js": "/agro-care/static/js/453.f11d96cd.chunk.js",
+    "static/media/home-img-bg.png": "/agro-care/static/media/home-img-bg.55e1d5a553e550d92d98.png",
+    "static/media/probiotics.png": "/agro-care/static/media/probiotics.2662db79fa2770d7103f.png",
     "static/media/anand_logo.png": "/agro-care/static/media/anand_logo.cfe6319b937ae9747242.png",
     "index.html": "/agro-care/index.html",
-    "main.70e5efd5.css.map": "/agro-care/static/css/main.70e5efd5.css.map",
-    "main.183277eb.js.map": "/agro-care/static/js/main.183277eb.js.map",
+    "main.a830c154.css.map": "/agro-care/static/css/main.a830c154.css.map",
+    "main.2d760439.js.map": "/agro-care/static/js/main.2d760439.js.map",
     "453.f11d96cd.chunk.js.map": "/agro-care/static/js/453.f11d96cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70e5efd5.css",
-    "static/js/main.183277eb.js"
+    "static/css/main.a830c154.css",
+    "static/js/main.2d760439.js"
   ]
 }
