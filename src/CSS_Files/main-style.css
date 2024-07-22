@@ -1,0 +1,12 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@import "about";
+@import "career";
+@import "common";
+@import "contact";
+@import "footer";
+@import "header";
+@import "home";
+@import "product";
+@import "service";
