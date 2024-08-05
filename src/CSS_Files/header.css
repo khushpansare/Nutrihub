@@ -5,8 +5,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: #004c22;
-  color: white;
+  /* background-color: #032b71; */
+  /* color: white; */
 }
 
 .navbar-logo {
@@ -28,7 +28,7 @@
 }
 
 .nav-links a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
   font-size: 18px;
 }
@@ -40,11 +40,18 @@
 }
 
 .dropdown .dropbtn {
-  background-color: #004c22;
-  color: white;
+  /* background-color: #032b71;
+  color: white; */
   border: none;
   cursor: pointer;
   font-size: 18px;
+}
+
+.logo {
+  margin-top: 50px;
+  img {
+    width: 50%;
+  }
 }
 
 .dropdown-content {
@@ -80,31 +87,107 @@
   }
 }
 
+.drawer-container {
+  position: relative;
+  display: none;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.drawer {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 999;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  /* padding: 60px 20px; */
+}
+
+.drawer-nav ul {
+  padding: 0 !important;
+  text-align: left;
+}
+
+.drawer-nav ul li {
+  list-style: none;
+  margin: 15px 0;
+  border-bottom: 1px solid grey;
+  /* border-top: 1px solid grey; */
+  padding: 12px;
+}
+
+.drawer-nav ul li a {
+  list-style: none;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: color 0.3s;
+  margin: 15px 0;
+}
+
+.drawer-nav a:hover {
+  color: #000;
+}
+
+.close-icon {
+  font-size: 36px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #000;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.3s;
+}
+
+.backdrop.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
-  }
-
-  .nav-links-mobile {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-  }
-
-  .nav-links-mobile li {
-    margin: 10px 0;
   }
 
   .mobile-menu-icon {
     display: block;
   }
 
-  .dropdown-content {
-    position: relative;
+  .drawer-container {
+    display: block;
   }
 }

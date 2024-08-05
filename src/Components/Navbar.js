@@ -5,12 +5,13 @@ import SearchIcon from "@mui/icons-material/Search";
 
 //
 import Logo from "../Assets/anand_logo.png";
+import MobileNavbar from "./MobileNavbar";
 
 function Navbar() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobile(!isMobile);
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
   };
 
   return (
@@ -18,18 +19,17 @@ function Navbar() {
       <h1 className="navbar-logo">
         <img src={Logo} alt="" />
       </h1>
-      <ul
-        className={isMobile ? "nav-links-mobile" : "nav-links"}
-        onClick={() => setIsMobile(false)}>
+      <ul className={"nav-links"}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>
           <Link to="/about">About us</Link>
         </li>
-        <li>
-          <Link to="/r_and_d">R & D</Link>
-        </li>
+
         <li className="dropdown">
-          <Link to="#" className="dropbtn">
-            division
+          <Link to="/products" className="dropbtn">
+            Products
           </Link>
           <div className="dropdown-content">
             <Link to="/services/service1">Service 1</Link>
@@ -37,17 +37,12 @@ function Navbar() {
             <Link to="/services/service3">Service 3</Link>
           </div>
         </li>
-        <li>
-          <Link to="/products">Product</Link>
-        </li>
-        <li>
-          <Link to="/probiotics">ProBiotics</Link>
-        </li>
+
         <li>
           <Link to="/gallary">Gallary</Link>
         </li>
         <li>
-          <Link to="/career">Career</Link>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
@@ -62,9 +57,8 @@ function Navbar() {
           <SearchIcon />
         </li>
       </ul>
-      <button className="mobile-menu-icon" onClick={toggleMobileMenu}>
-        {isMobile ? <>&#10005;</> : <>&#9776;</>}
-      </button>
+
+      <MobileNavbar toggleDrawer={toggleDrawer} isDrawerOpen={isDrawerOpen} />
     </nav>
   );
 }
