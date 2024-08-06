@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/agro-care/static/css/main.d9ed398e.css",
-    "main.js": "/agro-care/static/js/main.1f727665.js",
+    "main.css": "/agro-care/static/css/main.f7e2d620.css",
+    "main.js": "/agro-care/static/js/main.38730c3f.js",
     "static/js/453.dcf3ce54.chunk.js": "/agro-care/static/js/453.dcf3ce54.chunk.js",
     "static/media/image-asset.png": "/agro-care/static/media/image-asset.ab59a721f95f72cd0cfd.png",
     "static/media/claudio-testa--SO3JtE3gZo-unsplash.jpg": "/agro-care/static/media/claudio-testa--SO3JtE3gZo-unsplash.315256523bbb7c77875d.jpg",
@@ -12,10 +12,18 @@
     "static/media/quality.png": "/agro-care/static/media/quality.69148edd97ba9a978d80.png",
     "static/media/excellence.png": "/agro-care/static/media/excellence.a58d60c13879cac67974.png",
     "static/media/anand_logo.png": "/agro-care/static/media/anand_logo.cb4e9b055bfa3011e87d.png",
+    "static/media/product-7.png": "/agro-care/static/media/product-7.7b180853669c1c4bfb52.png",
     "static/media/innovation.png": "/agro-care/static/media/innovation.20644d2fba2af6aafc21.png",
     "static/media/bg-down-grass.png": "/agro-care/static/media/bg-down-grass.aaa55859041096ce03b3.png",
     "static/media/respect-care.png": "/agro-care/static/media/respect-care.d18495a722cf0ffcecb5.png",
     "static/media/integrity.png": "/agro-care/static/media/integrity.b69a38dc2cdd5fe63fa4.png",
+    "static/media/product-6.png": "/agro-care/static/media/product-6.96872a5c6b73c990017d.png",
+    "static/media/product-8.png": "/agro-care/static/media/product-8.2159d919b92d8a19433c.png",
+    "static/media/product-5.png": "/agro-care/static/media/product-5.ace4a9ba2e61fe40d5bd.png",
+    "static/media/product-1.png": "/agro-care/static/media/product-1.1ca3b0acc11da1b3a55f.png",
+    "static/media/product-2.png": "/agro-care/static/media/product-2.7affcbe30c16e4f33f2b.png",
+    "static/media/product-3.png": "/agro-care/static/media/product-3.9b91a7e9a2337bc765cc.png",
+    "static/media/product-4.png": "/agro-care/static/media/product-4.bf422c1d825ebefdaaff.png",
     "static/media/Gripper.png": "/agro-care/static/media/Gripper.afd100861776d2ebd0b1.png",
     "static/media/soil-cure.png": "/agro-care/static/media/soil-cure.84b6889f96f62c19b349.png",
     "static/media/Aqua-cure.png": "/agro-care/static/media/Aqua-cure.111e43246fbc815b52c2.png",
@@ -25,12 +33,12 @@
     "static/media/slick.ttf": "/agro-care/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/agro-care/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/agro-care/index.html",
-    "main.d9ed398e.css.map": "/agro-care/static/css/main.d9ed398e.css.map",
-    "main.1f727665.js.map": "/agro-care/static/js/main.1f727665.js.map",
+    "main.f7e2d620.css.map": "/agro-care/static/css/main.f7e2d620.css.map",
+    "main.38730c3f.js.map": "/agro-care/static/js/main.38730c3f.js.map",
     "453.dcf3ce54.chunk.js.map": "/agro-care/static/js/453.dcf3ce54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9ed398e.css",
-    "static/js/main.1f727665.js"
+    "static/css/main.f7e2d620.css",
+    "static/js/main.38730c3f.js"
   ]
 }
