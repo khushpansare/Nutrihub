@@ -1,0 +1,39 @@
+.product-content {
+  text-align: center;
+  color: #032b71;
+
+  .product-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    .single-product {
+      width: 300px;
+      margin: 15px;
+
+      .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        img {
+          /* width: 100%; */
+          width: 100%;
+          height: auto;
+          max-width: 100%;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #245550;
+        padding: 10px 15px;
+        margin-top: 10px !important;
+      }
+    }
+  }
+}

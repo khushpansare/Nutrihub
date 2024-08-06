@@ -11,6 +11,7 @@ import Gallary from "./Components/Gallary";
 import ProBiotics from "./Components/ProBiotics";
 import R_and_D from "./Components/R_and_D";
 import Blog from "./Components/Blog";
+import Product_Detail from "./Components/Product_Detail";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/probiotics" element={<ProBiotics />} />
             <Route exact path="/products" element={<Products />} />
             <Route exact path="/r_and_d" element={<R_and_D />} />
+            <Route exact path="/product-info/*" element={<Product_Detail />} />
           </Routes>
         </Router>
       </BreadcrumbsProvider>
