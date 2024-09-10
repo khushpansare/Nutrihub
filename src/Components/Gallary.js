@@ -17,6 +17,7 @@ function Gallary() {
       <BreadcrumbsItem to={"/event"}>Gallery</BreadcrumbsItem>
       <Layout>
         <BreadCrumb name="Gallery" />
+
         <div className="home-content">
           <Sec_3 />
         </div>

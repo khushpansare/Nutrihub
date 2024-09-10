@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Layout from "../Main Component/Layout";
 
@@ -11,7 +12,6 @@ import Product_5 from "../Assets/product/product-5.png";
 import Product_6 from "../Assets/product/product-6.png";
 import Product_7 from "../Assets/product/product-7.png";
 import Product_8 from "../Assets/product/product-8.png";
-import { Link } from "react-router-dom";
 
 const product = [
   {

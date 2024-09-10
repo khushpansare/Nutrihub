@@ -92,6 +92,67 @@
       }
     }
   }
+
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5; /* Track color */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #245550b7; /* Thumb color */
+    border-radius: 10px;
+    border: 2px solid #f5f5f5; /* Padding around the thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #8c82ff; /* Thumb color on hover */
+  }
+
+  .relatable-product {
+    display: flex;
+    /* justify-content: center; */
+    margin: 20px 10px;
+    overflow-x: scroll;
+    margin: 10px 25px;
+    /* border: 1px solid #ddd; */
+
+    .single-product {
+      width: 500px;
+      height: 300px;
+      margin: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.297);
+      text-align: center;
+
+      .img {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        img {
+          /* width: 100%; */
+          width: 100%;
+          height: auto;
+          /* max-width: 100%; */
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #245550;
+        padding: 7px 12px;
+        margin-top: 15px !important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 500px) {

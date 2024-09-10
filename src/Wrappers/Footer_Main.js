@@ -4,6 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 
 import Mobile_App_Img from "../Assets/footer/our-app.png";
+import { Link } from "react-router-dom";
 
 function Footer_Main() {
   return (
@@ -11,23 +12,6 @@ function Footer_Main() {
       <div className="footer">
         <div className="sec-1">
           <div className="wrapper">
-            <div className="content">
-              <h2>Site Links</h2>
-              <ul>
-                <li>
-                  <a href="">Home</a>
-                </li>
-                <li>
-                  <a href="">About us</a>
-                </li>
-                <li>
-                  <a href="">Blog</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
-                </li>
-              </ul>
-            </div>
             <div className="content">
               <h2>Contact us</h2>
               <div className="single-address">
@@ -51,6 +35,26 @@ function Footer_Main() {
                   <p>18002108987(24/7 Support Line)</p>
                 </div>
               </div>
+            </div>
+            <div className="content">
+              <h2>Site Links</h2>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About us</Link>
+                </li>
+                <li>
+                  <Link to="/gallary">Gallery</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
             </div>
           </div>
 
