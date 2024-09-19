@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nutrihub/static/css/main.b6c4b499.css",
-    "main.js": "/Nutrihub/static/js/main.ce3d59b2.js",
+    "main.css": "/Nutrihub/static/css/main.b77d29da.css",
+    "main.js": "/Nutrihub/static/js/main.03d5bbd5.js",
     "static/js/453.dcf3ce54.chunk.js": "/Nutrihub/static/js/453.dcf3ce54.chunk.js",
     "static/media/image-asset.png": "/Nutrihub/static/media/image-asset.ab59a721f95f72cd0cfd.png",
     "static/media/claudio-testa--SO3JtE3gZo-unsplash.jpg": "/Nutrihub/static/media/claudio-testa--SO3JtE3gZo-unsplash.315256523bbb7c77875d.jpg",
@@ -37,12 +37,12 @@
     "static/media/slick.ttf": "/Nutrihub/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Nutrihub/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Nutrihub/index.html",
-    "main.b6c4b499.css.map": "/Nutrihub/static/css/main.b6c4b499.css.map",
-    "main.ce3d59b2.js.map": "/Nutrihub/static/js/main.ce3d59b2.js.map",
+    "main.b77d29da.css.map": "/Nutrihub/static/css/main.b77d29da.css.map",
+    "main.03d5bbd5.js.map": "/Nutrihub/static/js/main.03d5bbd5.js.map",
     "453.dcf3ce54.chunk.js.map": "/Nutrihub/static/js/453.dcf3ce54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6c4b499.css",
-    "static/js/main.ce3d59b2.js"
+    "static/css/main.b77d29da.css",
+    "static/js/main.03d5bbd5.js"
   ]
 }
