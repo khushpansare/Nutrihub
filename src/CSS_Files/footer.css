@@ -9,6 +9,11 @@
     display: flex;
     justify-content: space-around;
 
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
     .content {
       margin: 5px 20px;
       text-align: left;
@@ -43,6 +48,30 @@
       .image-content {
         img {
           width: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .sec-1 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .content {
+      .image-content {
+        width: 100%;
+
+        img {
+          width: 100%;
         }
       }
     }

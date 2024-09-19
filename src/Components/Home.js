@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 import Layout from "../Main Component/Layout";
 import Sec_1 from "../Sections/Home/Sec_1";
 import Sec_2 from "../Sections/Home/Sec_2";
@@ -6,6 +8,7 @@ import Sec_3 from "../Sections/Home/Sec_3";
 import Sec_4 from "../Sections/Home/Sec_4";
 import ContactForm from "../Common/ContactForm";
 import Map from "../Common/Map";
+import Videos from "../Common/Videos";
 
 function Home() {
   return (
@@ -18,10 +21,11 @@ function Home() {
 
           <Sec_4 />
 
-          {/* <div className="wrap-content">
+          <div className="wrap-content">
             <ContactForm />
             <Map />
-          </div> */}
+          </div>
+          <Videos />
         </div>
       </Layout>
     </>

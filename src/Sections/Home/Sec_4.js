@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Avatar, Rating } from "@mui/material";
 import Slider from "react-slick";
+import axios from "axios";
 
 function Sec_4() {
   const settings = {
@@ -23,32 +24,19 @@ function Sec_4() {
     ],
   };
 
-  const cards = Array.from({ length: 10 }, (_, index) => (
-    <div className="single-card" key={index}>
-      <div className="card-header">
-        <div className="left">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-          <p>Yash Sakala</p>
-        </div>
-        <div className="right">
-          <Rating
-            name="simple-controlled"
-            value={"4.5"}
-            // onChange={(event, newValue) => {
-            //   setValue(newValue);
-            // }}
-          />
-        </div>
-      </div>
-      <div className="card-body">
-        <p>
-          Agriutsav helped me turn my struggling farm into a thriving business.
-          Their personalized crop recommendations and expert advice have
-          significantly increased my yields
-        </p>
-      </div>
-    </div>
-  ));
+  const [cardSlider, setCardSlider] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://nutrihubipl.com/admin/web-app/getCustomerReview.php")
+      .then((res) => {
+        // console.log(res.data.result);
+        setCardSlider(res.data.result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <>
@@ -57,7 +45,35 @@ function Sec_4() {
           <h2>Testimonial</h2>
           <h1>Our Coustomer Reviews</h1>
           <div className="card-container">
-            <Slider {...settings}>{cards}</Slider>
+            <Slider {...settings}>
+              {cardSlider.map((val, i) => {
+                return (
+                  <div className="single-card" key={i}>
+                    <div className="card-header">
+                      <div className="left">
+                        <Avatar
+                          alt={val.review_name}
+                          src="/static/images/avatar/1.jpg"
+                        />
+                        <p>{val.review_name}</p>
+                      </div>
+                      <div className="right">
+                        <Rating
+                          name="simple-controlled"
+                          value={val.review_ratings}
+                          readOnly
+                          precision={0.5}
+                          size="large"
+                        />
+                      </div>
+                    </div>
+                    <div className="card-body">
+                      <p>{val.review_desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </div>

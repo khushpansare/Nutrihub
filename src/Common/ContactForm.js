@@ -27,6 +27,7 @@ function ContactForm() {
     <>
       <div className="contact-form-content">
         <form className="contact-form" onSubmit={handleSubmit}>
+          <h1>Send Message Us</h1>
           <div className="form-row">
             <input
               type="text"
